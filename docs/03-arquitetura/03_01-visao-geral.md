@@ -1,10 +1,10 @@
 # 🏗️ Visão Geral da Arquitetura
 
-> **Documento:** Visão Geral da Arquitetura
-> **Código:** DOC-ARC-001
-> **Versão:** 1.0.0
-> **Status:** Em elaboração
-> **Última atualização:** 2026-05-26
+> **Documento:** Visão Geral da Arquitetura  
+> **Código:** DOC-ARC-001  
+> **Versão:** 1.0.0  
+> **Status:** Em elaboração  
+> **Última atualização:** 2026-05-26  
 
 ---
 
