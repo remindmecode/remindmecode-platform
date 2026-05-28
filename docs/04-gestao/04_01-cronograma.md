@@ -1,10 +1,10 @@
 # 🏥 Gestão — Cronograma do Projeto
 
-> **Documento:** Cronograma do Projeto
-> **Código:** DOC-GST-001
-> **Versão:** 1.0.0
-> **Status:** Em elaboração
-> **Última atualização:** 2026-05-27
+> **Documento:** Cronograma do Projeto  
+> **Código:** DOC-GST-001  
+> **Versão:** 1.0.0  
+> **Status:** Em elaboração  
+> **Última atualização:** 2026-05-27  
 
 ---
 
