@@ -4,7 +4,7 @@
 > **Código:** DOC-PTN-001  
 > **Versão:** 1.0.0  
 > **Status:** Em elaboração  
-> **Última atualização:** 2026-05-27  
+> **Última atualização:** 2026-05-28  
 
 ---
 
@@ -210,14 +210,13 @@ O projeto segue organização baseada em GitFlow.
 
 ## Branches de Trabalho
 
-| Prefixo   | Uso                   |
-| --------- | --------------------- |
-| feature/  | Novas funcionalidades |
-| docs/     | Documentação          |
-| fix/      | Correções             |
-| refactor/ | Refatorações          |
-| hotfix/   | Correções críticas    |
-| release/  | Preparação de release |
+| Prefixo   | Uso                            |
+| ----------| ------------------------------ |
+| feature/  | Funcionalidades e documentação |
+| fix/      | Correções                      |
+| refactor/ | Refatorações                   |
+| hotfix/   | Correções críticas             |
+| release/  | Preparação de release          |
 
 ---
 
@@ -303,6 +302,91 @@ git push origin --delete feature/requirements-documentation
 
 ---
 
+# 🚀 Fluxo de Release e Merge para Main
+
+O merge da branch `develop` para `main` representa a promoção de uma baseline estável do projeto.
+
+Esse processo deve ocorrer apenas quando:
+
+* funcionalidades estiverem consolidadas;
+* documentação estiver validada;
+* pipeline estiver consistente;
+* milestone estiver concluída.
+
+---
+
+## 🔄 Atualizar branch develop
+
+```bash
+git checkout develop
+git pull origin develop
+```
+
+---
+
+## 🔄 Atualizar branch main
+
+```bash
+git checkout main
+git pull origin main
+```
+
+---
+
+## 🔀 Realizar merge da develop
+
+```bash
+git merge develop
+```
+
+---
+
+## 🚀 Enviar atualização para repositório remoto
+
+```bash
+git push origin main
+```
+
+---
+
+## 🏷️ Criar tag da release
+
+```bash
+git tag -a v0.1.0 -m "Initial documentation baseline"
+```
+
+---
+
+## ☁️ Enviar tag para o remoto
+
+```bash
+git push origin v0.1.0
+```
+
+---
+
+# 📌 Objetivos do processo
+
+Esse fluxo garante:
+
+* rastreabilidade de releases;
+* estabilidade da branch principal;
+* versionamento incremental;
+* organização da evolução do projeto;
+* criação de baselines técnicas confiáveis.
+
+---
+
+# ⚠️ Regras Importantes
+
+* não realizar commits diretos na `main`;
+* somente promover versões validadas;
+* manter `develop` como base de integração contínua;
+* criar tags para releases relevantes;
+* preservar histórico limpo e rastreável.
+
+---
+
 # 🚀 Objetivos da Padronização
 
 A padronização dos commits busca:
@@ -313,6 +397,7 @@ A padronização dos commits busca:
 * apoiar versionamento semântico;
 * simplificar auditoria técnica;
 * melhorar colaboração;
-* estruturar histórico evolutivo da plataforma.
+* estruturar histórico evolutivo da plataforma;
+* apoiar organização por milestones e releases.
 
 ---
